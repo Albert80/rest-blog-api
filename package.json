@@ -1,0 +1,19 @@
+{
+  "name": "rest-blog-api",
+  "version": "1.0.0",
+  "description": "Module 2 Lab: RESTful Blog API",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Albert80/rest-blog-api.git"
+  },
+  "author": "César Alberto Trejo Juárez <cesaratj27@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Albert80/rest-blog-api/issues"
+  },
+  "homepage": "https://github.com/Albert80/rest-blog-api#readme"
+}
