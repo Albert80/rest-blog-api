@@ -11,6 +11,7 @@
 5. node-dev
 
 To install them: `npm i express morgan errorhandler body-parser -E`
+
 To install node-dev `npm i node-dev -DE`
 ***
 
@@ -30,13 +31,17 @@ Use Postman, CURL or any other HTTP request agent to test this server.
 #### CRUD commands are:
 
 *posts post data*
+
 `curl -H "Content-Type: application/json" -X POST -d '{"name": "Top 10 ES6 Features", "url":"http://webapplog.com/es6", "text": ""}'  "http://localhost:3000/posts"`
 
 *updates post data at a specified id*
+
 `curl -H 'Content-Type: application/json' -X PUT -d '{"name": "Top 10 ES6 Features Every Developer Must Know", "url":"http://webapplog.com/es6", "text": ""}'  "http://localhost:3000/posts/0"`
 
 *gets post data*
+
 `curl "http://localhost:3000/posts"`
 
 *deletes post data and a specified id*
+
 `curl -X DELETE "http://localhost:3000/posts/0"`
