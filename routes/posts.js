@@ -6,23 +6,24 @@
 module.exports = {
 	getPosts(req, res) {
 		// TODO: get posts
-		res.status(200).send(store.posts)
+		res.status(200).send(req.store.posts)
 	},
 	addPost(req, res) {
 		// TODO: add a new post to store
 		let newPost = req.body
-		let pId = store.posts.length
-		store.posts.push(newPost)
+		let pId = req.store.posts.length
+		req.store.posts.push(newPost)
 		res.status(201).send({pId: pId})
 	},
-	updatePOST(req, res) {
+	updatePost(req, res) {
 		// TODO: update post already added
-		store.posts[req.parms.pId] = req.body
-		res.status(200).send(store.posts[req.parms.pId])
+		//req.store.posts[req.params.pId] = Object.assign(req.store.posts[req.params.pId], req.body)
+		req.store.posts[req.params.pId] = req.body
+		res.status(200).send(req.store.posts[req.params.pId])
 	},
 	removePost(req, res) {
 		// TODO: deleta posts of store
-		store.posts.splice(req.params.pId, 1)
+		req.store.posts.splice(req.params.pId, 1)
 		res.status(204).send()
 	}
 }
