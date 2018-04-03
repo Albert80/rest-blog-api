@@ -17,7 +17,7 @@ To install node-dev `npm i node-dev -DE`
 
 #### How to run it?
 
-Launch server with `node server.js` in Terminal/Command Prompt from the project root
+Launch server with `npm start` in Terminal/Command Prompt from the project root
 
 #### How to use it?
 
